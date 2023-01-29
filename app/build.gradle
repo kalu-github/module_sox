@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "32.0.0"
+    defaultConfig {
+        applicationId "com.kalu.sox"
+        minSdkVersion 16
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    api 'androidx.appcompat:appcompat:1.0.2'
+//    api project(path: ':lib_sox')
+    implementation files('libs/lib_sox_v14.4.2_release_20230129.aar')
+}
