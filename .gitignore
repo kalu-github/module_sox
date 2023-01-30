@@ -2,3 +2,5 @@
 /.gradle/
 /.idea/
 /app/build/
+/lib_sox/build/
+/lib_sox/.cxx/

@@ -12,7 +12,7 @@ import java.io.File;
 public final class Sox {
 
     static {
-        System.loadLibrary("sox_jni");
+        System.loadLibrary("sox-jni");
     }
 
     private static String analysisProf(@NonNull String fromPath) {

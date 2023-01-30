@@ -9,6 +9,11 @@ android {
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+//            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
     }
     buildTypes {
         release {
@@ -20,5 +25,5 @@ android {
 dependencies {
     api 'androidx.appcompat:appcompat:1.0.2'
 //    api project(path: ':lib_sox')
-    implementation files('libs/lib_sox_v14.4.2_release_20230129.aar')
+    implementation files('libs/lib_sox_v14.4.2_release_20230130.aar')
 }

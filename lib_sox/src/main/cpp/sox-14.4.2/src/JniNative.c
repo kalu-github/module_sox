@@ -262,7 +262,7 @@ Java_lib_kalu_sox_Sox_excuate(JNIEnv *env, jclass clazz, jstring cmd) {
     int size=0;
     IString istr;
     Split(CMD," ",&istr);
-    int result=mymain(istr.num,istr.str);//=ChangeVoiceRobot(args);
+    int result=main(istr.num,istr.str);//=ChangeVoiceRobot(args);
     free(CMD);
     return (jint)result;
 

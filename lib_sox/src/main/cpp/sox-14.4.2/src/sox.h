@@ -2607,7 +2607,7 @@ lsx_getopt_init(
  **/
 int
 LSX_API
-mymain(
+main(
         int argc,
         LSX_PARAM_IN char **argv
         );
